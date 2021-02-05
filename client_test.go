@@ -7,7 +7,7 @@ import (
 func TestParseDate(t *testing.T) {
 	var birthdayDate string
 
-	birthdayDate = "01/06/1997"
+	birthdayDate = "01/06/97"
 
 	date := parseDate(birthdayDate)
 
