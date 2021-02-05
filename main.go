@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+
 func main()  {
 	fmt.Println("Entrer votre Nom: ") 
     var lastName string 
@@ -18,7 +19,8 @@ func main()  {
 	fmt.Scanln(&birthdayDate) 
 
 
-	client.newClient(lastName, firstName, birthdayDate)
 	var myClient *client
-	myClient = client.newClient(lastName, firstName, birthdayDate)
+	myClient = newClient(lastName, firstName, birthdayDate)
+
+	fmt.Println("Voici votre age: ", myClient.age)
 }
