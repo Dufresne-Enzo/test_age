@@ -1,8 +1,8 @@
 package main
 
 import {
-	fmt
-	client
+	"fmt"
+	"client"
 }
 
 func main()  {
