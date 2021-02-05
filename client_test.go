@@ -14,7 +14,7 @@ func testParseDate(t *testing.T) {
 	if date == 0 {
 		t.Error("La date est egal à 0")
 	}
-	if date.Year() != 1997{
+	if date != 1997{
 		t.Error("L'année ne correspond pas à la date d'anniversaire")
 	}
 }
