@@ -15,7 +15,7 @@ func testNewClient(t *testing.T) {
 	birthdayDate = "01/01/1997"
 
 	var myClient *client
-	var myClient *client = client.newClient(lastName, firstName, birthdayDate)
+	newClient(lastName, firstName, birthdayDate)
 	if myClient == nil {
 		t.Error("Le client n'a pas été initialiser")
 	}
