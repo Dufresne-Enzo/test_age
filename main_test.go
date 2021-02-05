@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func testNewClient(t *testing.T) {
+func TestNewClient(t *testing.T) {
     var lastName string 
     var firstName string 
     var birthdayDate string 

@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func testParseDate(t *testing.T) {
+func TestParseDate(t *testing.T) {
 	var birthdayDate string
 
 	birthdayDate = "01/06/1997"
@@ -19,7 +19,7 @@ func testParseDate(t *testing.T) {
 	}
 }
 
-func testGetAge(t *testing.T) {
+func TestGetAge(t *testing.T) {
 
 	var y int
 	y = 1997
