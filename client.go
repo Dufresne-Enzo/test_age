@@ -2,6 +2,7 @@ package main
 
 import (
 	"time"
+	"fmt"
 )
 
 type client struct {
@@ -20,11 +21,11 @@ func newClient(lastName string, firstName string, birthdayDate string) *client {
 
 func getAge(year int) int {
 	now := time.Now()
-	return year - now.Year()
+	return now.Year() - year
 }
 
 func parseDate(birthdayDate string) int {
-	layout := "14/02/2010"
+	layout := "01/02/06"
 	t, _ := time.Parse(layout, birthdayDate)
 	return t.Year()
 }
