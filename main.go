@@ -1,9 +1,8 @@
 package main
 
-import {
+import (
 	"fmt"
-	"client"
-}
+)
 
 func main()  {
 	fmt.Println("Entrer votre Nom: ") 
@@ -17,15 +16,9 @@ func main()  {
     fmt.Println("Entrer votre date de naissance: ") 
     var birthdayDate string 
 	fmt.Scanln(&birthdayDate) 
-	
-	layout := "14/02/2010"
-	t, err := time.Parse(layout, birthdayDate)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(t)
 
 
-	var client myClient*
-	//myClient = client.newClient(,,,,)
+	client.newClient(lastName, firstName, birthdayDate)
+	var myClient *client
+	myClient = client.newClient(lastName, firstName, birthdayDate)
 }
