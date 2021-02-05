@@ -2,6 +2,6 @@ package main
 
 import "testing"
 
-func testAddition(t *testing.T) {
-	
+func test(t *testing.T) {
+
 }

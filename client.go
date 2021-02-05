@@ -6,3 +6,7 @@ type client struct {
 	birthdayDate int
 	age int
 }
+
+func newClient(firstName string, lastName  string, birthdayDate int) *client {
+
+}
